@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schedule Planner</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="display-6">
+
+                <h1 class="display-6 text-center text-white display-float-left"><i class="fa fa-history fa-float-left"
+                        style="font: size 24px;color:white;"></i> Schedule</h1>
+
+                <h2 class="display-6 text-center text-white display-float-left">Today is: </h2>
+                <div class="text-center">
+                    <button class="btn btn-primary" id="clear-btn"> Clear Schedule</button>
+                   
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Dynamically generated items if there is time to do so -->
+        <div class="card-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-2 bg-dark">
+                    <h3 class="time-text time-text text-center" data-time="hour"
+                        style="margin-top: 30px; color: white;">12:00am</h3>
+                </div>
+                <div class="col-md-10">
+                    <form class="form-inline">
+                        <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                        <button class="btn col-md-2 btn-squared-default btn-dark">
+                            <i class="fa fa-save fa-5x" data-img="icons"></i>
+                            <br>
+                            save
+                            <br>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-2 bg-dark">
+                    <h3 class="time-text time-text text-center" data-time="hour"
+                        style="margin-top: 30px; color: white;">1:00am</h3>
+                </div>
+                <div class="col-md-10">
+                    <form class="form-inline">
+                        <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                        <button class="btn col-md-2 btn-squared-default btn-dark">
+                            <i class="fa fa-save fa-5x" data-img="icons"></i>
+                            <br>
+                            save
+                            <br>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">2:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">3:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">4:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">5:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">6:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">7:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">8:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">9:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">10:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">11:00am</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">12:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">1:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">2:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">3:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">4:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">5:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">6:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">7:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">8:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">9:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">10:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-fluid">
+                <div class="row no-gutters">
+                    <div class="col-md-2 bg-dark">
+                        <h3 class="time-text time-text text-center" data-time="hour"
+                            style="margin-top: 30px; color: white;">11:00pm</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <form class="form-inline">
+                            <textarea class="form-control col-lg-10" id="event" rows="4"></textarea>
+                            <button class="btn col-md-2 btn-squared-default btn-dark">
+                                <i class="fa fa-save fa-5x" data-img="icons"></i>
+                                <br>
+                                save
+                                <br>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javasrcpt.js"></script>
+    <script src="moment.js"></script>
+</body>
+
+</html>
