@@ -4661,6 +4661,11 @@
 
 })));
 $("h2").text("Today is: " + moment().format())
+console.log(moment())
+console.log(moment().locale())
+console.log(NowDate)
+
+
 
 
 
